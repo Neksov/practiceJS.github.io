@@ -1,0 +1,92 @@
+.hide
+  position: absolute
+  width: 1px
+.accordion
+  background: #ff5a3c
+  border: 1px solid #ffffff
+  list-style: none
+  padding: 0.5rem
+  opacity: 0.9
+  width: 100%
+.accordion-item
+  position: relative
+  width: 100%
+  border-bottom: 2px solid #171718
+  padding: 0.5rem
+  &:last-child
+    border-bottom: none
+.accordion-label
+  padding: 20px 20px 20px 30px
+  width: 100%
+  display: block
+  font-size: 25px
+  color: #000000
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+.accordion-label2
+  padding: 20px 20px 20px 0px
+  width: 100%
+  display: block
+  font-size: 20px
+  color: #000000
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+.accordion-label3
+  padding: 20px 20px 20px 0px
+  width: 100%
+  display: block
+  font-size: 20px
+  color: #000000
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+.accordion-child
+  margin: 0
+  overflow: hidden
+  transition: all 0.3s ease
+  opacity: 0
+  height: 0
+  transform: scale(1,0)
+  transform-origin: center top
+  color: #fff
+  input[type=checkbox]:checked ~ &
+    margin: auto
+    height: auto
+    opacity: 1
+    transform: scale(1)
+.accordion-child2
+  margin: 0
+  overflow: hidden
+  transition: all 0.3s ease
+  opacity: 0
+  height: 0
+  transform: scale(1,0)
+  transform-origin: center top
+  color: #fff
+  input[type=checkbox]:checked ~ &
+    margin: auto
+    background: #171718
+    box-shadow: 0 3px 6px 1px rgba(0,0,0,0.16)
+    padding: 5px
+    height: auto
+    font-size: 16px
+    opacity: 1
+    transform: scale(1)
+
+.returnDistance
+  transform: rotate(180deg)
+.returnDistance.active
+  transform: rotate(0deg)
+.returnDistance2
+  transform: rotate(180deg)
+.returnDistance2.active
+  transform: rotate(0deg)
+.returnDistance3
+  transform: rotate(180deg)
+.returnDistance3.active
+  transform: rotate(0deg)
